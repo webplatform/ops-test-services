@@ -2,8 +2,6 @@
 
 Let’s automate tests on webplatform.org services, what’s expected so we can ensure consistency during maintenance and refactoring.
 
-This system can be used to ensure services availability and if important aspects of webplatform.org infrastructure remains present.
-
 Idea is that we declare à-la-TDD what’s exposed as a "run book" so it both documents what’s expected AND helps us ensure it remains so.
 
 This repository leverages [ServerSpec](http://serverspec.org/) to describe configuration and tests if they are consistent.
@@ -31,7 +29,4 @@ Run within the container, note that its basically what Makefile does at `run` ta
 - http://blog.jasonantman.com/2015/02/rspec-matcher-for-hash-item-value/
 - http://blog.jasonantman.com/2015/03/some-additional-serverspec-types/
 - http://rspec.info/blog/2014/01/new-in-rspec-3-composable-matchers/
-
-
-# vim: ft=gh-markdown
 
