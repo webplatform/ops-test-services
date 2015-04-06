@@ -1,12 +1,12 @@
 # WebPlatform operations services test runner
 
-Let’s automate tests on webplatform.org services, what’s expected so we can ensure consistency during maintenance and refactoring.
+Let’s automate tests on [webplatform.org](https://www.webplatform.org) services, what’s expected so we can ensure consistency during maintenance and refactoring.
 
 Idea is that we declare à-la-TDD what’s exposed as a "run book" so it both documents what’s expected AND helps us ensure it remains so.
 
 This repository leverages [ServerSpec](http://serverspec.org/) to describe configuration and tests if they are consistent.
 
-If you have the [Requirements](#Requirements), you can run in two commands;
+If you have the [Requirements](#requirements), you can run in two commands;
 
     make build
     make run
