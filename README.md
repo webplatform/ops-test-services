@@ -1,5 +1,7 @@
 # WebPlatform operations services test runner
 
+**STATE: Sandbox, not ready at all!!**
+
 Let’s automate tests on [webplatform.org](https://www.webplatform.org) services, what’s expected so we can ensure consistency during maintenance and refactoring.
 
 Idea is that we declare à-la-TDD what’s exposed as a "run book" so it both documents what’s expected AND helps us ensure it remains so.
@@ -15,6 +17,15 @@ Run within the container, note that its basically what Makefile does at `run` ta
 
     docker run -it --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp renoirb-serverspec
     // ... in container, in the repository mounted as a volume, you can run rake
+
+
+## TODO
+
+1. [ ] yaml reader to describe HTTP requests parameters and expectations
+1. [ ] Test in a way such that we can make requests with direct IP address and what Host header to use
+1. [ ] Organize tests by domain names
+1. [ ] Ensure tests covers both direct origin server AND Varnish/Fastly
+1. [ ] Setup Travis CI?
 
 
 ## Requirements
